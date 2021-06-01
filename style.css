@@ -161,3 +161,30 @@ nav {
 .tablas-titulo {
   margin: 0 auto;
 }
+
+/* ACERCA DE */
+
+.acerca-de {
+  display: flex;
+  min-height: 100vh;
+  background-color: white;
+  padding: 20px;
+}
+
+.acerca-de-titulo {
+  margin: 0 auto;
+}
+
+/* CONTACTO */
+
+.contacto {
+  display: flex;
+  min-height: 100vh;
+  background-color: black;
+  padding: 20px;
+}
+
+.contacto-titulo {
+  color: white;
+  margin: 0 auto;
+}
