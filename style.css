@@ -128,7 +128,7 @@ nav {
 }
 
 .foto-intro {
-  max-width: 80vw;
+  max-height: 80vh;
   margin: 50px;
   box-shadow: 5px -5px 20px 2px #444;
   margin: 20px auto;
@@ -144,8 +144,8 @@ nav {
   .foto-intro {
     display: inline;
     height: 100vh;
-    margin: 50px;
-    box-shadow: 5px -5px 20px 2px #444;
+    margin: 80px;
+    box-shadow: 15px -15px 0 -3px #ffdc82, 15px -15px 0 0 black;
   }
 }
 
@@ -165,14 +165,31 @@ nav {
 /* ACERCA DE */
 
 .acerca-de {
-  display: flex;
+  display: grid;
+  grid-template-rows: 20vh auto;
   min-height: 100vh;
   background-color: white;
   padding: 20px;
 }
 
 .acerca-de-titulo {
-  margin: 0 auto;
+  display: block;
+  margin: 10px auto;
+}
+
+.acerca-de-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 200px;
+  margin-bottom: 100px;
+  align-items: center;
+}
+.acerca-de-foto {
+  max-height: 70vh;
+  box-shadow: -15px 15px 0 -3px white, -15px 15px 0 0 black;
+}
+.acerca-de-content-text {
+  font-size: 24px;
 }
 
 /* CONTACTO */
