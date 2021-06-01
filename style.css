@@ -14,15 +14,11 @@ body {
 
 /* NAV BAR */
 nav {
-  position: fixed;
-  top: 0;
-  overflow: hidden;
   height: 20vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
   background-color: white;
-  width: 100%;
 }
 
 .logo {
@@ -118,7 +114,6 @@ nav {
 /* INTRO */
 
 .intro {
-  margin-top: 20vh;
   min-height: 80vh;
   display: grid;
   grid-template-rows: auto auto;
@@ -160,7 +155,7 @@ nav {
   display: flex;
   min-height: 100vh;
   background-color: rgb(58, 211, 211);
-  padding: 20vh 20px;
+  padding: 20px;
 }
 
 .tablas-titulo {
