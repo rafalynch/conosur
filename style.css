@@ -128,7 +128,7 @@ nav {
   margin: 50px;
 }
 .intro {
-  min-height: 80vh;
+  height: 100vh;
   display: grid;
   grid-template-columns: auto auto;
   background-color: #ffdc82;
@@ -136,14 +136,14 @@ nav {
 
 .foto-intro {
   display: inline;
-  height: 100vh;
+  height: 75vh;
   margin: 80px;
   box-shadow: 15px -15px 0 -3px #ffdc82, 15px -15px 0 0 black;
 }
 
 @media (max-width: 959px) {
   .intro {
-    min-height: 50vh;
+    height: 100vh;
     display: grid;
     grid-template-rows: auto auto;
     grid-template-columns: auto;
@@ -179,8 +179,8 @@ nav {
 
 .acerca-de {
   display: grid;
-  grid-template-rows: 20vh auto;
-  min-height: 100vh;
+  grid-template-rows: 15vh auto;
+  height: 100vh;
   background-color: white;
   padding: 20px;
 }
@@ -191,12 +191,12 @@ nav {
 }
 
 .acerca-de-content {
-  min-height: 80vh;
+  height: 60vh;
   display: flex;
   justify-content: space-around;
 }
 .acerca-de-foto {
-  max-height: 70vh;
+  height: 70vh;
   box-shadow: -15px 15px 0 -3px white, -15px 15px 0 0 black;
 }
 .acerca-de-content-text {
@@ -209,7 +209,7 @@ nav {
   .acerca-de {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: auto auto;
+    grid-template-rows: 10vh auto;
   }
 
   .acerca-de-titulo {
@@ -217,17 +217,19 @@ nav {
   }
 
   .acerca-de-content {
+    height: auto;
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto auto;
-    gap: 15px;
+    gap: 10px;
     margin: 0 15px;
   }
   .acerca-de-foto {
+    align-self: center;
     display: block;
     margin: 0 auto;
     padding: 0;
-    height: 50vh;
+    height: 40vh;
   }
   .acerca-de-content-text {
     display: block;
@@ -239,7 +241,7 @@ nav {
 
 .contacto {
   display: flex;
-  min-height: 100vh;
+  height: 100vh;
   background-color: black;
   padding: 20px;
 }
