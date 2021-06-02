@@ -28,7 +28,7 @@ nav {
 
 .logo {
   height: 110px;
-  z-index: 1;
+  z-index: 3;
 }
 
 .nav-links {
@@ -69,6 +69,7 @@ nav {
   .burger {
     display: block;
     cursor: pointer;
+    z-index: 3;
   }
   nav {
     width: 100vw;
@@ -90,6 +91,7 @@ nav {
     padding-top: 150px;
     padding-bottom: 350px;
     font-size: 36px;
+    z-index: 2;
   }
   .nav-links li {
     opacity: 0;
@@ -397,7 +399,7 @@ nav {
   text-align: center;
   font-size: 60px;
   box-shadow: 2px 2px 3px #999;
-  z-index: 100;
+  z-index: 1;
 }
 
 .whatsapp-icon {
