@@ -243,12 +243,82 @@ nav {
   display: flex;
   height: 100vh;
   background-color: black;
-  padding: 20px;
+  align-items: center;
 }
 
-.contacto-titulo {
-  color: white;
+.form-contacto {
   margin: 0 auto;
+  height: 70%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+}
+
+.titulo-contacto {
+  justify-self: end;
+  color: white;
+}
+
+.input-contacto {
+  justify-self: start;
+  display: grid;
+  justify-content: space-between;
+  justify-items: center;
+  align-items: center;
+}
+
+.label {
+  color: white;
+}
+
+.nombre {
+  width: 250px;
+  display: grid;
+}
+
+.input-nombre {
+  font-family: "Poppins", sans-serif;
+}
+
+.email {
+  width: 250px;
+  display: grid;
+}
+
+.input-email {
+  font-family: "Poppins", sans-serif;
+}
+
+.mensaje {
+  width: 250px;
+  display: grid;
+}
+
+.input-mensaje {
+  padding: 3px;
+  font-family: "Poppins", sans-serif;
+  height: 200px;
+  resize: none;
+}
+
+.boton-contacto {
+  font-family: "Poppins", sans-serif;
+  height: 30px;
+  background-color: #ffdc82;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+}
+
+@media (max-width: 959px) {
+  .form-contacto {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .titulo-contacto {
+    justify-self: center;
+  }
 }
 
 /* FOOTER */
