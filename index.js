@@ -17,9 +17,9 @@ const navSlide = () => {
 
   navLinks.forEach((link, index) => {
     link.addEventListener("click", () => {
-      body.classList.toggle("body-stuck");
-      nav.classList.toggle("nav-active");
-      burger.classList.toggle("toggle");
+      body.classList.remove("body-stuck");
+      nav.classList.remove("nav-active");
+      burger.classList.remove("toggle");
     });
   });
 };
