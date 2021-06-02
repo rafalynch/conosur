@@ -75,6 +75,7 @@ nav {
   nav {
     width: 100vw;
     top: 0;
+    overflow: hidden;
   }
   .nav-links {
     position: fixed;
@@ -89,9 +90,10 @@ nav {
     transform: translateY(300%);
     transition: transform 0.2s ease-in;
     padding: 0px;
-    padding-top: 100px;
-    padding-bottom: 120px;
+    padding-top: 150px;
+    padding-bottom: 350px;
     font-size: 36px;
+    overflow: hidden;
   }
   .nav-links li {
     opacity: 0;
@@ -101,16 +103,16 @@ nav {
 @keyframes navLinkFade {
   from {
     opacity: 0;
-    transform: translateX(50px);
+    transform: translateY(50px);
   }
   to {
     opacity: 1;
-    transform: translateX(0px);
+    transform: translateY(0px);
   }
 }
 
 .nav-active {
-  transform: translateY(-5%);
+  transform: translateY(-10%);
 }
 .toggle .line1 {
   transform: rotate(-45deg) translate(-9px, 5px);
