@@ -166,14 +166,22 @@ nav {
 /* TABLAS */
 
 .tablas {
-  display: flex;
+  display: grid;
   height: 600px;
   background-color: rgb(58, 211, 211);
   padding: 20px;
+  justify-items: center;
 }
 
 .tablas-titulo {
   margin: 0 auto;
+}
+
+.tablas-btn {
+  text-decoration: none;
+  color: white;
+  border: solid white;
+  padding: 25px;
 }
 
 /* ACERCA DE */
