@@ -1,0 +1,246 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/* NAVBAR */
+nav {
+  height: 120px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+}
+
+.logo {
+  height: 110px;
+  z-index: 3;
+}
+
+.nav-links {
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 50%;
+  font-size: 20px;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-links li {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* INTRO */
+
+.intro-pedidos {
+  background-color: #ffdc82;
+  height: 200px;
+  display: grid;
+  padding: 15px 0;
+}
+
+.titulo-pedidos {
+  margin: 0 auto;
+}
+.pedidos-descripcion {
+  margin: 0 auto;
+  max-width: 600px;
+  text-align: center;
+}
+
+/* FORMULARIO */
+.pedido-contenedor {
+  background-color: white;
+}
+
+.pedido-form {
+  padding: 5% 10%;
+  display: grid;
+  gap: 20px;
+}
+
+.pedido-form > div {
+  display: grid;
+}
+
+.pedido-form input {
+  margin: 0 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+label {
+  margin: 0 10px;
+}
+
+.nombre-apellido {
+  grid-template-columns: 1fr 1fr;
+}
+
+.nombre {
+  display: grid;
+  justify-items: stretch;
+}
+
+.apellido {
+  display: grid;
+  justify-items: stretch;
+}
+
+.altura-peso {
+  grid-template-columns: 1fr 1fr;
+}
+
+.altura {
+  display: grid;
+  justify-items: stretch;
+}
+
+.peso {
+  display: grid;
+  justify-items: stretch;
+}
+
+.email {
+  display: grid;
+  justify-content: stretch;
+}
+
+.boton {
+  font-family: "Poppins", sans-serif;
+  height: 30px;
+  width: 200px;
+  margin: 0 auto;
+  background-color: black;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  color: white;
+}
+
+.add-file-btn {
+  font-family: "Poppins", sans-serif;
+  height: 20px;
+  width: 150px;
+  margin: 10px 10px;
+  background-color: rgb(182, 182, 182);
+  font-size: 12px;
+  font-weight: bold;
+  border: none;
+  color: black;
+}
+
+.add-file-text {
+  color: green;
+  font-size: 12px;
+  margin: 0 10px;
+}
+
+/* COLA */
+.cola-titulo {
+  margin: 0 auto;
+}
+
+.main-container h2 {
+  margin: 0 0 80px 0;
+  color: black;
+  font-size: 30px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+}
+
+div .radio-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.custom-radio input {
+  display: none;
+}
+
+.radio-btn {
+  margin: 10px;
+  width: 180px;
+  height: 200px;
+  border: 3px solid transparent;
+  display: inline-block;
+  border-radius: 10px;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 0 20px #c3c3c367;
+  cursor: pointer;
+}
+
+.radio-btn > i {
+  color: #ffffff;
+  background-color: black;
+  font-size: 20px;
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%) scale(4);
+  border-radius: 50px;
+  padding: 3px;
+  transition: 0.2s;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.radio-btn .hobbies-icon {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.radio-btn .hobbies-icon h3 {
+  color: black;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.custom-radio input:checked + .radio-btn {
+  border: 3px solid black;
+}
+
+.custom-radio input:checked + .radio-btn > i {
+  opacity: 1;
+  transform: translateX(-50%) scale(1);
+}
+
+.icon-tail {
+  height: 80px;
+  justify-self: center;
+}
+
+/* NIVEL */
+.nivel-contenedor-radio {
+  margin: 20px;
+  display: flex;
+}
+.nivel-radio {
+  display: grid;
+  justify-items: center;
+  gap: 15px;
+}

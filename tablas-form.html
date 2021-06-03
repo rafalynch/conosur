@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pedidos</title>
+    <link rel="stylesheet" href="./tablas-form.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+    <script async src="./pedidos.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav>
+        <div class="logo">
+          <img src="./images/logo.png" alt="logo" class="logo" />
+        </div>
+        <ul class="nav-links">
+          <li>
+            <a href="./index.html" class="nav-link"
+              >Volver a la pagina principal</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="intro-pedidos">
+      <h1 class="titulo-pedidos">Hace tu pedido!</h1>
+      <p class="pedidos-descripcion">
+        Bienvenido a la familia Conosur! Para arrancar completá estos datos y
+        nos estaremos comunicando con vos.
+      </p>
+      <p class="pedidos-descripcion">ALOHA SPIRIT!</p>
+    </div>
+    <div class="pedido-contenedor">
+      <form
+        class="pedido-form"
+        method="POST"
+        action="https://formsubmit.co/rafa_lynch@hotmail.com"
+        enctype="multipart/form-data"
+      >
+        <input type="hidden" name="_template" value="table" />
+        <input type="hidden" name="_subject" value="Nuevo pedido!" />
+        <input type="hidden" name="_captcha" value="false" />
+        <div class="nombre-apellido" id="nombre-apellido">
+          <div class="nombre">
+            <label for="nombre" class="label">Nombre</label>
+            <input
+              type="text"
+              name="nombre"
+              id="nombre"
+              class="nombre-input"
+              required
+            />
+          </div>
+          <div class="apellido">
+            <label for="apellido" class="label">Apellido</label>
+            <input
+              type="text"
+              name="apellido"
+              id="apellido"
+              class="apellido-input"
+            />
+          </div>
+        </div>
+
+        <div class="email">
+          <label for="email" class="label">Email</label>
+          <input type="text" name="email" id="email" class="email-input" />
+        </div>
+
+        <div class="localidad">
+          <label for="localidad" class="label">Localidad</label>
+          <input
+            type="text"
+            name="localidad"
+            id="localidad"
+            class="localidad-input"
+          />
+        </div>
+
+        <div class="altura-peso">
+          <div class="altura">
+            <label for="altura" class="label">Altura</label>
+            <input type="text" name="altura" id="altura" class="altura-input" />
+          </div>
+          <div class="peso">
+            <label for="peso" class="label">Peso</label>
+            <input type="text" name="peso" id="peso" class="peso-input" />
+          </div>
+        </div>
+
+        <div class="cola">
+          <label class="cola-titulo" for="cola">Cola</label>
+          <div class="radio-buttons">
+            <label class="custom-radio">
+              <input value="square" type="radio" name="cola" required />
+              <span class="radio-btn"
+                ><i class="las la-check"></i>
+                <div class="hobbies-icon">
+                  <img class="icon" src="./images/square.svg" alt="surf" />
+                  <h3>Square</h3>
+                </div>
+              </span>
+            </label>
+            <label class="custom-radio">
+              <input value="round-square" type="radio" name="cola" />
+              <span class="radio-btn"
+                ><i class="las la-check"></i>
+                <div class="hobbies-icon">
+                  <img
+                    class="icon"
+                    src="./images/round-square.svg"
+                    alt="surf"
+                  />
+                  <h3>Round Square</h3>
+                </div>
+              </span>
+            </label>
+            <label class="custom-radio">
+              <input type="radio" name="cola" value="pin" />
+              <span class="radio-btn"
+                ><i class="las la-check"></i>
+                <div class="hobbies-icon">
+                  <img class="icon-tail" src="./images/pin.svg" alt="surf" />
+                  <h3>Pin</h3>
+                </div>
+              </span>
+            </label>
+            <label class="custom-radio">
+              <input type="radio" name="cola" value="bat-wing" />
+              <span class="radio-btn"
+                ><i class="las la-check"></i>
+                <div class="hobbies-icon">
+                  <img class="icon" src="./images/bat-wing.svg" alt="surf" />
+                  <h3>Bat wing</h3>
+                </div>
+              </span>
+            </label>
+          </div>
+        </div>
+        <div class="modelo">
+          <label for="modelo" class="label">Modelo y estilo</label>
+          <input type="text" name="modelo" id="modelo" />
+        </div>
+        <div class="nivel">
+          <label class="nivel-titulo" for="cola">Nivel de surf</label>
+
+          <div class="nivel-contenedor-radio">
+            <label class="nivel-radio">
+              <span>Principiante</span>
+              <input type="radio" name="nivel" value="principiante" />
+            </label>
+            <label class="nivel-radio">
+              <span>Intemedio</span>
+              <input type="radio" name="nivel" value="intermedio" />
+            </label>
+            <label class="nivel-radio">
+              <span>Avanzado</span>
+              <input type="radio" name="nivel" value="avanzado" />
+            </label>
+            <label class="nivel-radio">
+              <span>Experto</span>
+              <input type="radio" name="nivel" value="experto" />
+            </label>
+          </div>
+        </div>
+
+        <div class="ilustraciones">
+          <label for="ilustraciones" class="label">Ilustraciones</label>
+          <input
+            class="input-ilustraciones"
+            hidden
+            type="file"
+            name="ilutraciones"
+            id="ilusraciones"
+            accept="image/png, image/jpeg"
+          />
+          <button type="button" class="add-file-btn">Adjuntar</button>
+          <span class="add-file-text"></span>
+        </div>
+        <div class="horario">
+          <label for="horario" class="label"
+            >Horario en que nos podemos comunicar con vos</label
+          >
+          <input type="text" name="horario" id="horario" />
+        </div>
+        <div class="boton-contenedor">
+          <button type="submit" class="boton">ENVIAR</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
